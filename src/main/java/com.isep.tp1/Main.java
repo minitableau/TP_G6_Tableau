@@ -12,6 +12,6 @@ public class Main {
 //        Nous utilisons les méthodes nextInt pour demander un entier et nextFloat pour demander un réel, on stocke ces valeurs.
         System.out.println("J’ai recupere un entier: " + unEntier);
         System.out.println("J’ai aussi recupere un reel: " + unReel);
-//        Avec la méthode println on affiche les deux nombres (à l'aide d'une concaténation) entré par l'utilisateur..
+//        Avec la méthode println on affiche les deux nombres (à l'aide d'une concaténation) entré par l'utilisateur.
     }
 }
