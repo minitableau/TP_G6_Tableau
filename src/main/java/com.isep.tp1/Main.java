@@ -1,4 +1,4 @@
-package main.java.com.isep.tp1;
+package com.isep.tp1;
 
 import java.util.Scanner;
 
