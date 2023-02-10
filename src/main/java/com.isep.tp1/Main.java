@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 //        On déclare une classe nommée Main avec une méthode main.
+        System.out.println("Bonjour quel est votre prénom ?");
         Scanner scanner = new Scanner(System.in);
+        String prenom = scanner.nextLine();
         int unEntier = scanner.nextInt();
         float unReel = scanner.nextFloat();
 //        On instancie la classe Scanner nommée scanner, on permet à l'utilisateur d'entrée des valeurs.
