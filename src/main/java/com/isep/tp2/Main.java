@@ -12,8 +12,11 @@ public class Main {
 //        min();
 //        egaliteStr();
 //        factorielle();
-        countdown();
+//        countdown();
+//        carres();
+
     }
+
 
 
     public static void discriminant() {
@@ -127,7 +130,15 @@ public class Main {
         System.out.println("BOOM!");
     }
 
-    public static void carres(){
+    public static void carres() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Saisir un entier");
+        int x = scanner.nextInt();
+        System.out.println(x + "\t" + x * x);
+//        System.out.println("x = " + x + "\tx^2 = " + x * x);
+    }
+
+    public static void tableMultiplication(){
 
     }
 }
