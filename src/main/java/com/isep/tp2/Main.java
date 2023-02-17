@@ -7,15 +7,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         isBinarySumInArray(new int[]{1, 2, 3, 4, 15});
-//        discriminant();
-//        partie();
-//        max();
-//        min();
-//        egaliteStr();
-//        factorielle();
-//        countdown();
-//        carres();
-
+        discriminant();
+        partie();
+        max();
+        min();
+        egaliteStr();
+        factorielle();
+        countdown();
+        carres();
+        tableMultiplication();
+        division();
     }
 
 //    public static boolean isBinarySumInArray(int[] tableau) {
@@ -183,6 +184,22 @@ public class Main {
 
     }
 
+//Ne permet pas de faire 32!
+
+//    public static void factorielle() {
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Saisir un entier positif ou nul");
+//        int n = scanner.nextInt();
+//        long factorielle = 1;
+//        for (int i = 1; i <= n; i++) {
+//            factorielle *= i;
+//        }
+//        System.out.println(n + "! = " + factorielle);
+//    }
+
+// Ne permet toujours pas de faire 32!
+
+
 //    Question 2 - Il y a un problème avec la boucle sachant qu'elle commence à 0 la factorielle est donc forcément nulle
 //    Question 3 - Le programme est correct ex : 0! = 1 ; 3! = 6 ; 5! = 120
 
@@ -203,10 +220,41 @@ public class Main {
 //        System.out.println("x = " + x + "\tx^2 = " + x * x);
     }
 
+    //Une boucle for
     public static void tableMultiplication() {
+        int n = 10;
+        for (int i = 1; i <= n; i++) {
+            System.out.print(i);
+            for (int j = 2; j <= n; j++) {
+                System.out.print("\t" + i * j);
+            }
+            System.out.println();
+        }
 
     }
+//Les bornes de la seconde boucle for sont de 2 à n.
+//Un élément de la table de multiplication est le produit des indices (attention indice +1 si on utilise les tableaux)
+// de sa ligne et de sa colonne.
+
+
+    public static void division() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Veuillez saisir le premier entier (numérateur)");
+        float premierEntier = scanner.nextFloat();
+        float deuxiemeEntier;
+        do {
+            System.out.println("Veuillez saisir le deuxième entier (dénominateur)");
+            deuxiemeEntier = scanner.nextFloat();
+        } while (deuxiemeEntier == 0);
+        float division = premierEntier / deuxiemeEntier;
+        System.out.println("La division de " + premierEntier + " par " + deuxiemeEntier +
+                " est égale à " + division);
+    }
+
+
+
 }
+
 
 
 
