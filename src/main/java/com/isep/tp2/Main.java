@@ -6,17 +6,18 @@ import java.util.Scanner;
 //sout = System.out.println()
 public class Main {
     public static void main(String[] args) {
-        isBinarySumInArray(new int[]{1, 2, 3, 4, 15});
-        discriminant();
-        partie();
-        max();
-        min();
-        egaliteStr();
-        factorielle();
-        countdown();
-        carres();
-        tableMultiplication();
-        division();
+//        isBinarySumInArray(new int[]{1, 2, 3, 4, 15});
+//        discriminant();
+//        partie();
+//        max();
+//        min();
+//        egaliteStr();
+//        factorielle();
+//        countdown();
+//        carres();
+//        tableMultiplication();
+//        division();
+        regle();
     }
 
 //    public static boolean isBinarySumInArray(int[] tableau) {
@@ -251,7 +252,14 @@ public class Main {
                 " est égale à " + division);
     }
 
-
+    public static void regle() {
+        Scanner scanner = new Scanner(System.in);
+        int longeur;
+        do {
+            System.out.println("Veuillez saisir la longeur (strictement positive)");
+            longeur = scanner.nextInt();
+        } while (longeur <= 0);
+    }
 
 }
 
