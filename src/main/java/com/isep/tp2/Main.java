@@ -6,6 +6,7 @@ import java.util.Scanner;
 //sout = System.out.println()
 public class Main {
     public static void main(String[] args) {
+        isBinarySumInArray(new int[]{1, 2, 3, 4, 5});
 //        discriminant();
 //        partie();
 //        max();
@@ -17,8 +18,24 @@ public class Main {
 
     }
 
+    public static boolean isBinarySumInArray(int[] tableau) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Quelle est la valeur de val ?");
+        int val = scanner.nextInt();
+        for (int b : tableau) {
+            for (int j = 1; j < tableau.length - 1; j++) {
+                int somme = b + tableau[j];
+                if (val == somme) {
+                    System.out.println(true);
+                    return true;
+                }
+            }
+        }
+        System.out.println(false);
+        return false;
+    }
 
-
+    // La complexité de la méthode est n^2 car il y a deux boucles.
     public static void discriminant() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Quelle est la valeur de a ?");
@@ -138,7 +155,7 @@ public class Main {
 //        System.out.println("x = " + x + "\tx^2 = " + x * x);
     }
 
-    public static void tableMultiplication(){
+    public static void tableMultiplication() {
 
     }
 }
