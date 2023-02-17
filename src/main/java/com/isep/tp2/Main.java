@@ -59,6 +59,28 @@ public class Main {
 
 //mieux
 
+//    public static boolean isBinarySumInArray(int[] tableau) {
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Quelle est la valeur de val ?");
+//        int val = scanner.nextInt();
+//        for (int i = 0, j = 1; j < tableau.length; i++, j++ ) {
+//            int somme = tableau[i] + tableau[j];
+//            if (val == somme) {
+//                System.out.println(true);
+//                return true;
+//            }
+//            if (j == tableau.length - 1) {
+//                i++;
+//                j = i + 1;
+//            } else {
+//                j++;
+//            }
+//        }
+//        System.out.println(false);
+//        return false;
+//    }
+
+
 //pour mieux faire une soustraction et verifier si dans le tableau
 
 
