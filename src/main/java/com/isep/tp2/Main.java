@@ -6,7 +6,7 @@ import java.util.Scanner;
 //sout = System.out.println()
 public class Main {
     public static void main(String[] args) {
-        isBinarySumInArray(new int[]{1, 2, 3, 4, 5});
+        isBinarySumInArray(new int[]{1, 2, 3, 4, 15});
 //        discriminant();
 //        partie();
 //        max();
@@ -18,13 +18,34 @@ public class Main {
 
     }
 
+//    public static boolean isBinarySumInArray(int[] tableau) {
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Quelle est la valeur de val ?");
+//        int val = scanner.nextInt();
+//        for (int b : tableau) {
+//            for (int j = 1; j < tableau.length - 1; j++) {
+//                int somme = b + tableau[j];
+//                if (val == somme) {
+//                    System.out.println(true);
+//                    return true;
+//                }
+//            }
+//        }
+//        System.out.println(false);
+//        return false;
+//    }
+
+// La complexité de la méthode est n^2 car il y a deux boucles.
+
     public static boolean isBinarySumInArray(int[] tableau) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Quelle est la valeur de val ?");
         int val = scanner.nextInt();
-        for (int b : tableau) {
-            for (int j = 1; j < tableau.length - 1; j++) {
-                int somme = b + tableau[j];
+        for (int i = 0; i < tableau.length; i++) {
+            int j = i;
+            while (j < tableau.length - 1) {
+                j++;
+                int somme = tableau[i] + tableau[j];
                 if (val == somme) {
                     System.out.println(true);
                     return true;
@@ -35,7 +56,12 @@ public class Main {
         return false;
     }
 
-    // La complexité de la méthode est n^2 car il y a deux boucles.
+
+//mieux
+
+//pour mieux faire une soustraction et verifier si dans le tableau
+
+
     public static void discriminant() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Quelle est la valeur de a ?");
