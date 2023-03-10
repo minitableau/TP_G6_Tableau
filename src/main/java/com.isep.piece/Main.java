@@ -12,12 +12,12 @@ public class Main {
 
     public static void piece() {
 //        List<Integer> tableau = Arrays.asList(1, 2, 5, 10, 20, 50, 100, 200);
-        List<Integer> tableau = Arrays.asList(1, 2, 3);
-        int prix = 2;
+        List<Integer> tableau = Arrays.asList(1,2);
+        int prix = 100;
 
 
         int[] count = new int[prix + 1]; // initalisation d'un tableau pour garder en memoire toutes
-        // les facons possibles de payer caque prix de 0 à prix.
+        // les facons possibles de payer chaque prix de 0 à prix.
 
         count[0] = 1; // si 0 prix 0 alors 1 possiblité pb !
 
@@ -38,4 +38,5 @@ public class Main {
 
 
 }
+
 
