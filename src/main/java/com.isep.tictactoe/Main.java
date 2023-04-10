@@ -18,7 +18,7 @@ public class Main {
             if (!out) {
                 continue;
             } else {
-                // Placer le symbole du joueur sur la case choisie
+                // on palce le symbole du joueur sur la case choisie
                 board[(int) coord[0]][(int) coord[1]] = player;
 
                 boolean end1 = CheckWin.victory(board, (int) coord[0], (int) coord[1], player);

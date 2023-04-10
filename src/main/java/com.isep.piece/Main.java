@@ -11,9 +11,9 @@ public class Main {
 
 
     public static void piece() {
-//        List<Integer> tableau = Arrays.asList(1, 2, 5, 10, 20, 50, 100, 200);
-        List<Integer> tableau = Arrays.asList(1,2);
-        int prix = 100;
+        List<Integer> tableau = Arrays.asList(1, 2, 5, 10, 20, 50, 100, 200);
+//        List<Integer> tableau = Arrays.asList(1,2);
+        int prix = 10000;
 
 
         int[] count = new int[prix + 1]; // initalisation d'un tableau pour garder en memoire toutes
